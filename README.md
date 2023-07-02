@@ -1,1 +1,16 @@
-# wiresheark_darkmode
+# Usage
+alias wireshark='sudo wireshark -stylesheet ~/.dark.css'
+
+/* Dark theme for Wireshark */
+* {
+    background-color: #000000;  /* Cambia este valor para el color de fondo */
+    color: #ffffff !important;  /* Cambia este valor para el color de texto general */
+}
+
+QPlainTextEdit, QListView, QTreeView, QSplitter {
+    background-color: #000000 !important;  /* Cambia este valor para el color de fondo de las ventanas de texto y el divisor */
+}
+
+QPlainTextEdit[objectName="console"] span {
+    color: #ffffff !important;  /* Cambia este valor para el color de texto de los índices */
+}
